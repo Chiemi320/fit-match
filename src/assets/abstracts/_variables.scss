@@ -1,0 +1,79 @@
+// ==============================================
+// Color Palette Variables
+// ==============================================
+
+// Main Colors
+$deep-black: #0d0d0d;
+$clean-light: #d9d9d9;
+$coral-power: #d9695f;
+$teal-energy: #26a699;
+$ocean-deep: #1f98a6;
+
+// Extended Palette - Dark Series
+$black: #000000;
+$dark-charcoal: #0d0d0d;
+$charcoal: #1a1a1a;
+$dark-gray: #2d2d2d;
+
+// Extended Palette - Light Series
+$white: #ffffff;
+$off-white: #f5f5f5;
+$light-gray: #e5e5e5;
+$silver: #d9d9d9;
+
+// Accent - Coral Series
+$coral-light: #ff7a6b;
+$coral: #d9695f;
+$coral-medium: #c55a50;
+$coral-dark: #b04b41;
+
+// Accent - Teal Series
+$teal-light: #2ec5b6;
+$teal: #26a699;
+$teal-medium: #1f98a6;
+$teal-dark: #1a7f8a;
+
+// ==============================================
+// Semantic Colors (Purpose-based)
+// ==============================================
+
+// Primary
+$primary: $teal-energy;
+$primary-light: $teal-light;
+$primary-dark: $teal-dark;
+
+// Secondary
+$secondary: $coral-power;
+$secondary-light: $coral-light;
+$secondary-dark: $coral-dark;
+
+// Neutral
+$text-primary: $deep-black;
+$text-secondary: $dark-gray;
+$text-light: $clean-light;
+$background-primary: $silver;
+$background-secondary: $off-white;
+$background-dark: $deep-black;
+
+// Borders & Dividers
+$border-light: $light-gray;
+$border-medium: $clean-light;
+$border-dark: $charcoal;
+
+// ==============================================
+// Font Family Variables
+// ==============================================
+
+// Primary Font (Readability focused)
+$font-primary:
+  'Inter', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic Medium', 'Meiryo', sans-serif;
+
+// Headline Font (Impact focused)
+$font-heading: 'Poppins', 'Inter', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+
+// Japanese Main Font
+$font-japanese:
+  'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic Medium', 'Yu Gothic', 'Meiryo', sans-serif;
+
+// Display Font (Large text, logos)
+$font-display: 'Poppins', 'Inter', sans-serif;
