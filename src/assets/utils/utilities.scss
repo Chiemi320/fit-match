@@ -1,0 +1,15 @@
+.show-only-mobile {
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.show-only-desktop {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
