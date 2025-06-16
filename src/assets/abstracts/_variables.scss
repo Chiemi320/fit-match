@@ -53,11 +53,11 @@ $text-primary: $deep-black;
 $text-light: $white;
 $background-primary: $off-white;
 $background-secondary: $silver;
-// $background-dark: $deep-black;
+$background-dark: $dark-gray;
 
 // Borders & Dividers
 // $border-light: $light-gray;
-// border-medium: $clean-light;
+// $border-medium: $clean-light;
 // $border-dark: $charcoal;
 
 // ==============================================
@@ -86,3 +86,5 @@ $header-height: 4rem; // Height of the header
 
 $body-padding: 0 1.5rem; // Padding for the body content
 $body-padding-inline: 1.5rem; // Inline padding for body content
+
+$icon-size-medium: 3rem;

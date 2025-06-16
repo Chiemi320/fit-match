@@ -17,6 +17,8 @@ import { TrainerPreviewCard } from '@/components/cards/index.js'
         <TrainerPreviewCard class="trainer-preview__item" />
         <TrainerPreviewCard class="trainer-preview__item" />
         <TrainerPreviewCard class="trainer-preview__item" />
+        <TrainerPreviewCard class="trainer-preview__item" />
+        <TrainerPreviewCard class="trainer-preview__item" />
       </div>
     </div>
   </section>
@@ -36,7 +38,7 @@ import { TrainerPreviewCard } from '@/components/cards/index.js'
 
 .trainer-preview__btn {
   position: absolute;
-  top: 50%;
+  top: 55%;
   transform: translateY(-50%);
   display: flex;
   align-items: center;
@@ -47,13 +49,30 @@ import { TrainerPreviewCard } from '@/components/cards/index.js'
   font-size: 1.5rem;
   padding-bottom: 0.25rem;
   background-color: var(--btn-primary);
+  color: var(--text-white);
   border-radius: 50%;
+}
+
+.trainer-preview__btn--prev {
+  left: 0.3rem;
+}
+
+.trainer-preview__btn--next {
+  right: 0.3rem;
 }
 
 .trainer-preview__carousel {
   overflow: auto;
   scroll-snap-type: x mandatory;
   width: 100%;
+  height: 100%;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.trainer-preview__carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .trainer-preview__items {

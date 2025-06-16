@@ -19,11 +19,18 @@ import AppFooter from '@/components/layout/AppFooter.vue'
   --body-padding: #{$body-padding};
   --body-padding-inline: #{$body-padding-inline};
 
+  --icon-size-medium: #{$icon-size-medium};
+
   /* Color variables */
   --text-white: #{$text-light};
-  --btn-primary: #{$primary-dark};
+  --text-primary: #{$text-primary};
+  --btn-primary: #{$dark-gray};
   --bg-color-primary: #{$background-primary};
   --bg-color-secondary: #{$background-secondary};
+  --bg-color-dark: #{$background-dark};
+
+  /* Font family variables */
+  --font-family-display: #{$font-display};
 }
 
 /* Global styles for the app */
@@ -37,5 +44,10 @@ import AppFooter from '@/components/layout/AppFooter.vue'
   border-radius: 2rem;
   padding-block: 0.57rem;
   text-align: center;
+}
+
+/* Boostrap icon size */
+.bi {
+  font-size: 1.8rem;
 }
 </style>
