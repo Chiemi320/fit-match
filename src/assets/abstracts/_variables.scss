@@ -38,27 +38,27 @@ $teal-dark: #1a7f8a;
 // ==============================================
 
 // Primary
-$primary: $teal-energy;
-$primary-light: $teal-light;
+// $primary: $teal-energy;
+// $primary-light: $teal-light;
 $primary-dark: $teal-dark;
 
 // Secondary
-$secondary: $coral-power;
-$secondary-light: $coral-light;
-$secondary-dark: $coral-dark;
+// $secondary: $coral-power;
+// $secondary-light: $coral-light;
+// $secondary-dark: $coral-dark;
 
 // Neutral
 $text-primary: $deep-black;
-$text-secondary: $dark-gray;
-$text-light: $clean-light;
-$background-primary: $silver;
-$background-secondary: $off-white;
-$background-dark: $deep-black;
+// $text-secondary: $dark-gray;
+$text-light: $white;
+$background-primary: $off-white;
+$background-secondary: $silver;
+// $background-dark: $deep-black;
 
 // Borders & Dividers
-$border-light: $light-gray;
-$border-medium: $clean-light;
-$border-dark: $charcoal;
+// $border-light: $light-gray;
+// border-medium: $clean-light;
+// $border-dark: $charcoal;
 
 // ==============================================
 // Font Family Variables
@@ -82,4 +82,7 @@ $font-display: 'Poppins', 'Inter', sans-serif;
 // Components Variables
 // ==============================================
 
-$header-height: 4rem;
+$header-height: 4rem; // Height of the header
+
+$body-padding: 0 1.5rem; // Padding for the body content
+$body-padding-inline: 1.5rem; // Inline padding for body content
