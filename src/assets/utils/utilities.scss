@@ -1,15 +1,34 @@
 .show-only-mobile {
-  display: block;
-
   @media (min-width: 768px) {
     display: none;
   }
 }
 
 .show-only-desktop {
-  display: none;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+/* Button variant */
+@mixin btn-primary {
+  color: var(--text-white);
+  background-color: var(--btn-color-primary);
+}
+
+@mixin btn-secondary {
+  border: 1px solid var(--btn-color-primary);
+  background-color: var(--btn-color-secondary);
+}
+
+// Body layout utilities
+.container {
+  padding-inline: var(--padding-inline);
 
   @media (min-width: 768px) {
-    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: clamp(1rem, 4vw, 2rem);
   }
 }

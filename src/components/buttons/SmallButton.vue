@@ -1,13 +1,26 @@
-<script setup></script>
+<script setup>
+/*import { defineProps } from 'vue'
+
+ const props = defineProps({
+  path: {
+    type: String,
+    required: true
+  }
+})
+
+後ほどパスを設定する
+一旦ホームに戻るようにしてる
+*/
+</script>
 
 <template>
-  <button type="button" class="btn btn--small">Button</button>
+  <RouterLink to="/" class="btn btn--small">SmallButton</RouterLink>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .btn--small {
   width: 45%;
-  border: 1px solid var(--btn-primary);
   font-size: 1rem;
+  @include btn-secondary;
 }
 </style>

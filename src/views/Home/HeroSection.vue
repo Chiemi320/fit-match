@@ -1,46 +1,72 @@
 <script setup>
-import { PrimaryButton } from '@/components/buttons/index.js'
-import { SecondaryButton } from '@/components/buttons/index.js'
+import BaseLink from '@/components/BaseLink.vue'
 </script>
 
 <template>
   <section class="hero-section">
-    <h4 class="hero-section__subtitle">Perfectly Paired Fitness</h4>
-    <h2 class="hero-section__title">Your Trainer Match Awaits</h2>
-    <p class="hero-section__description">
-      No more trial and error. Find trainers who match your goals, schedule, and training style
-      perfectly.
-    </p>
-    <div class="hero-section__buttons">
-      <PrimaryButton />
-      <SecondaryButton />
+    <div class="hero-section__container">
+      <div class="hero-section__content">
+        <h4 class="hero-section__subtitle">Perfectly Paired Fitness</h4>
+        <h2 class="hero-section__title">Your Trainer Match Awaits</h2>
+        <p class="hero-section__description">
+          No more trial and error. Find trainers who match your goals, schedule, and training style
+          perfectly.
+        </p>
+        <BaseLink to="/signup" variant="signup" class="hero-section__btn">Start Today</BaseLink>
+        <div class="hero-section__label">Featured in</div>
+        <div class="hero-section__logos">
+          <!-- Replace the placeholder logo with mockups -->
+          <div class="hero-section__logo logo">BigLogo</div>
+          <div class="hero-section__logo logo">BigLogo</div>
+          <div class="hero-section__logo logo">BigLogo</div>
+          <div class="hero-section__logo logo">BigLogo</div>
+          <div class="hero-section__logo logo">BigLogo</div>
+        </div>
+      </div>
+      <div class="hero-section__image-container">
+        <img
+          class="hero-section__image"
+          src="@/assets/images/placeholders/mockup-mobile-small.png"
+          alt="FitMatch connects people with fitness goals to certified trainers and fitness enthusiasts."
+        />
+      </div>
     </div>
-    <div class="hero-section__label">Featured in</div>
-    <div class="hero-section__logos">
-      <!-- those are supposed to be img tags -->
-      <div class="hero-section__logo logo1">MediaLogo</div>
-      <div class="hero-section__logo logo2">Mock</div>
-      <div class="hero-section__logo logo3">Logo<br />Mocked</div>
-      <div class="hero-section__logo logo4">BigLogo</div>
-      <div class="hero-section__logo logo5">ImageHere</div>
-      <div class="hero-section__logo logo6">Logo</div>
-    </div>
-    <img
-      class="hero-section__image"
-      src="@/assets/images/placeholders/placeholder-image.jpg"
-      alt="Placeholder Image"
-    />
   </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .hero-section {
+  width: 100%;
+  padding-block: 9.7rem 3.6rem;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-block: 6rem;
+  }
+}
+
+.hero-section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: var(--padding-inline);
+  max-width: var(--container-m);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8vw;
+  }
+}
+
+.hero-section__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-block: 9.7rem 3.6rem;
-  padding-inline: var(--body-padding-inline);
+  max-width: 500px;
 }
 
 .hero-section__subtitle {
@@ -54,16 +80,18 @@ import { SecondaryButton } from '@/components/buttons/index.js'
   line-height: 1.3;
   margin-bottom: 2.6rem;
 }
-.hero-section__description {
+.hero-section__description,
+.hero-section__logos {
   margin-bottom: 2.25rem;
 }
 
-.hero-section__buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.hero-section__btn {
   width: 100%;
-  margin-bottom: 2.25rem;
+  margin-bottom: 2.7rem;
+
+  @media (min-width: 768px) {
+    width: 18rem;
+  }
 }
 
 .hero-section__label {
@@ -81,12 +109,12 @@ import { SecondaryButton } from '@/components/buttons/index.js'
 }
 
 .hero-section__image {
-  width: 100%;
+  max-width: 400px;
   height: auto;
   border-radius: 1.5rem;
 }
 
-/* Logos are placeholders, replace with actual img tags */
+/* Logos are placeholders */
 .hero-section__logo {
   display: flex;
   align-items: center;
@@ -94,35 +122,9 @@ import { SecondaryButton } from '@/components/buttons/index.js'
   padding: 0 0.5rem;
 }
 
-.logo1 {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.logo2 {
-  letter-spacing: 0.1rem;
-  font-size: 1.2rem;
-}
-
-.logo3 {
-  font-size: 1.2rem;
-  line-height: 1.2;
-  font-style: italic;
-}
-
-.logo4 {
+.logo {
   font-size: 1.8rem;
   font-weight: bold;
   font-style: italic;
-}
-
-.logo5 {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-}
-
-.logo6 {
-  font-size: 1.5rem;
-  font-weight: 500;
 }
 </style>

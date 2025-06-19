@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as *;
+
+:root {
+  // Body properties
+  --container-l: #{$container-l};
+  --container-m: #{$container-m};
+  --container-s: #{$container-s};
+
+  --padding-inline: #{$padding-inline-body};
+
+  --background-primary: #{$background-primary};
+  --background-secondary: #{$background-secondary};
+
+  // Button properties
+  --btn-size-l: #{$btn-size-l};
+
+  // Link properties
+  --link-size-s: #{$link-size-s};
+  --link-size-m: #{$link-size-m};
+  --link-size-l: #{$link-size-l};
+  --link-size-xl: #{$link-size-xl};
+
+  --link-color-primary: #{$link-color-primary};
+  --link-color-secondary: #{$link-color-secondary};
+}

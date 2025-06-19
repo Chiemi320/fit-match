@@ -1,14 +1,26 @@
-<script setup></script>
+<script setup>
+/*import { defineProps } from 'vue'
+
+ const props = defineProps({
+  path: {
+    type: String,
+    required: true
+  }
+})
+
+後ほどパスを設定する
+一旦ホームに戻るようにしてる
+*/
+</script>
 
 <template>
-  <button type="button" class="btn btn--secondary">Button</button>
+  <RouterLink to="/" class="btn btn--secondary">SecondaryButton</RouterLink>
 </template>
 
-<style scoped>
-/* General button styles are written in App.vue */
+<style lang="scss" scoped>
 .btn--secondary {
   width: 100%;
-  border: 1px solid var(--btn-primary);
   font-size: 1.2rem;
+  @include btn-secondary;
 }
 </style>

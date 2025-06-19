@@ -12,8 +12,6 @@ import AppFooter from '@/components/layout/AppFooter.vue'
 </template>
 
 <style lang="scss">
-@use './assets/abstracts/variables.scss' as *;
-
 :root {
   /* Global style variables */
   --body-padding: #{$body-padding};
@@ -24,13 +22,15 @@ import AppFooter from '@/components/layout/AppFooter.vue'
   /* Color variables */
   --text-white: #{$text-light};
   --text-primary: #{$text-primary};
-  --btn-primary: #{$dark-gray};
+
   --bg-color-primary: #{$background-primary};
   --bg-color-secondary: #{$background-secondary};
   --bg-color-dark: #{$background-dark};
 
   /* Font family variables */
   --font-family-display: #{$font-display};
+
+  /*下からチェック済み*/
 }
 
 /* Global styles for the app */
@@ -38,12 +38,17 @@ import AppFooter from '@/components/layout/AppFooter.vue'
   margin-top: 4rem;
 }
 
-/* General button styles */
-.btn {
-  display: block;
-  border-radius: 2rem;
-  padding-block: 0.57rem;
-  text-align: center;
+/* Utilities style */
+.show-only-mobile {
+  @media (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+.show-only-desktop {
+  @media (max-width: 767px) {
+    display: none !important;
+  }
 }
 
 /* Boostrap icon size */

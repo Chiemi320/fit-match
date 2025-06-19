@@ -1,5 +1,5 @@
 <script setup>
-import { SmallButton } from '@/components/buttons/index.js'
+import BaseLink from '@/components/BaseLink.vue'
 </script>
 
 <template>
@@ -12,14 +12,15 @@ import { SmallButton } from '@/components/buttons/index.js'
         src="@/assets/images/placeholders/placeholder-image.jpg"
         alt="Tools Showcase Image"
       />
-      <h4 class="tools-showcase__subtitle">Progress Momentum Tracker</h4>
-      <p class="tools-showcase__description">
-        Visual progress mapping and milestone celebrations keep you motivated. Our smart analytics
-        identify potential quit points and automatically trigger personalized encouragement to
-        maintain your fitness momentum.
-      </p>
-      <!-- See How It Worksといれる -->
-      <SmallButton />
+      <div class="tools-showcase__content tools-showcase__content--right">
+        <h4 class="tools-showcase__subtitle">Progress Momentum Tracker</h4>
+        <p class="tools-showcase__description">
+          Visual progress mapping and milestone celebrations keep you motivated. Our smart analytics
+          identify potential quit points and automatically trigger personalized encouragement to
+          maintain your fitness momentum.
+        </p>
+        <BaseLink to="/tools" variant="small" class="hero-section__btn">See How It Works</BaseLink>
+      </div>
     </section>
     <!-- Tool Section2 -->
     <section class="tools-showcase__section">
@@ -28,14 +29,17 @@ import { SmallButton } from '@/components/buttons/index.js'
         src="@/assets/images/placeholders/placeholder-image.jpg"
         alt="Tools Showcase Image"
       />
-      <h4 class="tools-showcase__subtitle">Accountability Partner System</h4>
-      <p class="tools-showcase__description">
-        Never train alone again. Our built-in buddy system pairs you with accountability partners
-        and sends smart reminders, progress check-ins, and motivational nudges when you need them
-        most.
-      </p>
-      <!-- Find Your Partnerといれる -->
-      <SmallButton />
+      <div class="tools-showcase__content tools-showcase__content--left">
+        <h4 class="tools-showcase__subtitle">Accountability Partner System</h4>
+        <p class="tools-showcase__description">
+          Never train alone again. Our built-in buddy system pairs you with accountability partners
+          and sends smart reminders, progress check-ins, and motivational nudges when you need them
+          most.
+        </p>
+        <BaseLink to="/trainers" variant="small" class="hero-section__btn"
+          >Find Your Partner</BaseLink
+        >
+      </div>
     </section>
     <!-- Tool Section Summary -->
     <section class="tools-showcase__footer">
@@ -86,6 +90,14 @@ import { SmallButton } from '@/components/buttons/index.js'
 .tools-showcase__image--left {
   align-self: flex-start;
   border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.tools-showcase__content--right {
+  padding-left: var(--body-padding-inline);
+}
+
+.tools-showcase__content--left {
+  padding-right: var(--body-padding-inline);
 }
 
 .tools-showcase__subtitle {

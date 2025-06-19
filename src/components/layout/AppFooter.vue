@@ -7,7 +7,7 @@
       <section class="app-footer__nav-section">
         <h5 class="app-footer__nav-title">Company</h5>
         <ul class="app-footer__nav-list">
-          <li><RouterLink to="/about">About</RouterLink></li>
+          <li><RouterLink to="/about">About Us</RouterLink></li>
           <li><RouterLink to="/blog">Blog</RouterLink></li>
         </ul>
       </section>

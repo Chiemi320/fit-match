@@ -1,5 +1,6 @@
 @use './abstracts/variables.scss';
-@use './base/reset.scss';
 @use './base/base.scss';
+@use './base/custom-properties.scss';
+@use './base/reset.scss';
 @use './utils/helper.scss';
 @use './utils/utilities.scss';
